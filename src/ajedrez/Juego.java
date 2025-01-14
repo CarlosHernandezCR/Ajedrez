@@ -11,6 +11,7 @@ public class Juego {
     private static final int MAX_NUM = 7;
 
     public static void main(String[] args) {
+        System.out.println("Iniciando el juego...");
         Scanner sc = new Scanner(System.in);
         Tablero tablero = new Tablero();
         int cuentaTurnos = 0;
@@ -20,11 +21,10 @@ public class Juego {
         boolean mov;
         boolean mate = false;
         while (cuentaTurnos < MAX_TURNOS && !mate) {
-            System.out.println(color ? "Las negras han ganado por jaque mate" : "Las blancas han ganado por jaque mate");
+            System.out.println("Turno: " + cuentaTurnos);
             tablero.imprimirTablero();
             if (esJaqueMate(tablero, color)) {
                 System.out.println(color ? "Las negras han ganado por jaque mate" : "Las blancas han ganado por jaque mate");
-                mate = true;
                 break;
             }
             if (!tablero.jaque(!color)) {
@@ -48,6 +48,7 @@ public class Juego {
             cuentaTurnos++;
         }
         sc.close();
+        System.out.println("Juego terminado.");
     }
 
     private static String obtenerCasilla(Scanner sc, Tablero tablero, boolean color) {
