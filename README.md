@@ -2,7 +2,7 @@
 
 ¡Bienvenido a mi proyecto de Ajedrez por Consola! 🏁 Este juego te permite disfrutar de partidas de ajedrez directamente desde la consola, con todas las reglas del ajedrez estándar implementadas.
 
-Próxima version: Ajedrez completament funcional con JavaFX
+Próxima version: Ajedrez completamente funcional con JavaFX
 
 ## 📸 Capturas de Pantalla
 
